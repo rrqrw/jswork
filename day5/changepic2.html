@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+  <div>
+    <img src="images/cup-1.png" alt="빨컵"  id="pic">
+  </div>
+  <script>
+    // 이미객체의 onclik 속성 사용 
+    let img = document.querySelector('#pic');
+    // img.onclick = changePic; // changePic()의 ()를 생략
+
+    // function changePic(){
+    //   img.src = "images/cup-2.png";
+    // }
+
+    // 이름이 없는 실행함수 사용
+    // img.onclik = function(){
+    //   img.src = "images/cup-2.png";
+    // }
+
+    // 마우스를 객체에 올렸을때 이벤트 발생
+    img.onmouseover= function(){
+      img.src="images/cup-2.png";
+    }
+    // 마우스가 객체에 벗어났을때 이벤트 발생
+    img.onmouseout= function(){
+      img.src="images/cup-1.png";
+    }
+  </script>
+</body>
+</html>
